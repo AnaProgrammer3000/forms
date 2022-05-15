@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<form class="card-form">
+    <div class="card__form__title">
+        Записаться на занятия
+    </div>
+    <div class="card__form__desc">
+        Оставьте контактные данные и мы обязательно свяжемся с вами
+    </div>
+    <div class="card-form__step">
+        Ввести контактные данные:
+    </div>
+    <div class="card-form__input__wrap">
+        <input class="card-form__input w100" type="text" placeholder="Имя">
+        <input class="card-form__input phone" type="text" placeholder="Телефон">
+        <input class="card-form__input" type="text" placeholder="Email">
+    </div>
+    <div class="card-form__step">
+        Выбрать формат обучения:
+    </div>
+    <div class="card__form__radio__wrap">
+        <label>
+            <input type="radio" class="card__form__radio__input" name="lerning-format">
+            <div class="custom-input"></div>
+            <div class="card__form__radio__input__title">Очно</div>
+        </label>
+        <label>
+            <input type="radio" class="card__form__radio__input" name="lerning-format" checked>
+            <div class="custom-input"></div>
+            <div class="card__form__radio__input__title">Онлайн</div>
+        </label>
+        <label>
+            <input type="radio" class="card__form__radio__input" name="lerning-format">
+            <div class="custom-input"></div>
+            <div class="card__form__radio__input__title">Дистанционно</div>
+        </label>
+    </div>
+    <input type="submit" class="card-form__btn" value="Записаться">
+    <div class="card__form__privacy">
+        Нажимая на кнопку, вы даёте согласие на обработку своих персональных данных в соответствии с
+        <a href="#">политикой конфиденциальности</a>
+    </div>
+</form>
+<script src="./script.js"></script>

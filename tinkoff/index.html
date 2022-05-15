@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<div class="card">
+    <div class="card__info">
+        <div class="card__info__title">Оплатить долями</div>
+        <div class="card__info__sale__wrap">
+            <div class="card__info__sale">- 10%</div>
+            <div class="card__info__sale__text">еще 3 дня 76:42:45</div>
+        </div>
+        <div class="card__info__price">5 700 ₽/мес.</div>
+        <div class="card__info__old-price">8 000 ₽/мес.</div>
+        <div class="card__info__text">Оплата частями в течении трех месяцев</div>
+    </div>
+    <form class="card__form">
+        <input type="text" class="card__form__input" placeholder="Имя">
+        <input type="text" class="card__form__input" placeholder="Телефон">
+        <input type="text" class="card__form__input last" placeholder="Email">
+        <div class="card__form__radio-name">
+            Выбрать формат обучения:
+        </div>
+        <div class="card__form__radio__wrap">
+            <label>
+                <input type="radio" class="card__form__radio__input" name="lerning-format">
+                <div class="custom-input"></div>
+                <div class="card__form__radio__input__title">Очно</div>
+            </label>
+            <label>
+                <input type="radio" class="card__form__radio__input" name="lerning-format" checked>
+                <div class="custom-input"></div>
+                <div class="card__form__radio__input__title">Онлайн</div>
+            </label>
+            <label>
+                <input type="radio" class="card__form__radio__input" name="lerning-format">
+                <div class="custom-input"></div>
+                <div class="card__form__radio__input__title">Дистанционно</div>
+            </label>
+        </div>
+        <input type="submit" class="card__form__btn" value="Приобрести">
+    </form>
+    <div class="card__privacy">
+        Нажимая на кнопку, вы даёте согласие на обработку своих персональных данных в соответствии с
+        <a href="#">политикой конфиденциальности</a>
+    </div>
+    <div class="card__submit-message"></div>
+</div>
+<script src="./script.js"></script>

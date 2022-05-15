@@ -1,0 +1,520 @@
+.card__wrap {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card-price {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 50px 65px 227px 65px;
+    position: relative;
+    width: 540px;
+    height: 766px;
+}
+
+.card-price__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+    margin: 0 0 50px 0;
+}
+
+.card-price__sale__wrap {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+
+.card-price__sale {
+    background: #667EEA;
+    border-radius: 42px;
+    width: 90px;
+    height: 40px;
+    padding: 7px 5px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFF;
+}
+
+.card-price__sale__text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #747474;
+}
+
+.card-price__price {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
+
+.card-price__old-price {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #7A7A7A;
+    text-decoration: line-through;
+    margin: 0 0 188px 0;
+}
+
+.card-price__cashback {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    position: relative;
+    margin: 0 0 15px 0;
+}
+
+.card-price__cashback span {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.card-price__cashback::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url('./mir-ico.svg') no-repeat center;
+    left: 55%;
+    top: 0;
+    width: 65px;
+    height: 19px;
+}
+
+.card-price__tax {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.card-price__tax span {
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.card-price__discount {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    padding: 72px 66px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #667EEA;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form {
+    margin: 0;
+}
+
+.card-form {
+    width: 540px;
+    height: 766px;
+    padding: 50px 65px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.card-form__step {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 0 0 30px 0;
+}
+
+.card-form__wrap {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 0 50px 0;
+}
+
+.card-form__group {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 19px;
+    width: 190px;
+    height: 113px;
+    box-sizing: border-box;
+}
+
+.card-form__group p {
+    margin: 0 0 7px 0;
+}
+
+.card-form__group p span {
+    font-weight: 600;
+}
+
+.card-form__group__img {
+    height: 15px;
+}
+
+.card-form label input {
+    display: none;
+}
+
+.card-form label input + .custom-input {
+    border: 1px solid #000;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.card-form label input:checked + .custom-input {
+    background-color: #000;
+}
+
+.card-form__group .custom-input {
+    margin: 0 0 6px 0;
+}
+
+.card-form__input__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 48px 0;
+    gap: 10px;
+}
+
+.card-form__input {
+    width: 191px;
+    height: 50px;
+    border: 1px solid #7A7A7A;
+    border-radius: 54px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+
+.card-form__input.w100 {
+    width: 100%;
+}
+
+.card__form__radio__wrap {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    margin: 0 0 50px 0;
+}
+
+.card__form__radio__wrap label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card__form__radio__input__title {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.card-form__btn {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    margin: 0 0 15px 0;
+    padding: 15px;
+    background: #667EEA;
+    border-radius: 54px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFF;
+    text-align: center;
+}
+
+.card__form__privacy {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #7C7C7C;
+}
+
+.card__form__privacy a {
+    color: #7C7C7C;
+}
+
+.success {
+    background: url('./suc.svg') no-repeat center;
+    background-color: white;
+}
+
+.success > * {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .card__wrap {
+        gap: 37px;
+    }
+
+    .card-price {
+        width: 520px;
+        height: 240px;
+        padding: 30px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-price__title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .card-price__sale__wrap {
+        margin: 0 0 5px 0;
+    }
+
+    .card-price__sale {
+        width: 70px;
+        height: 30px;
+        padding: 4px 0;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .card-price__sale__text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .card-price__price {
+        font-size: 32px;
+        line-height: 39px;
+        margin: 0 0 5px 0;
+    }
+
+    .card-price__old-price {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0;
+    }
+
+    .right-table {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .card-price__tax {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .card-price__cashback {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 10px 0 0 0;
+    }
+
+    .card-price__cashback::before {
+        right: 0;
+        top: 100%;
+    }
+
+    .card-price__discount {
+        display: none;
+    }
+
+    .card-form {
+        width: 520px;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .card-form.success {
+        width: 520px;
+        height: 240px;
+        padding: 30px 20px;
+    }
+
+    .card-form__step {
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0 0 15px 0;
+    }
+
+    .card-form__wrap {
+        justify-content: space-between;
+    }
+
+    .card-form__group {
+        border-radius: 5px;
+        padding: 15px 30px;
+        display: flex;
+        width: 230px;
+        height: auto;
+        gap: 10px;
+    }
+
+    .custom-input {
+        flex-shrink: 0;
+    }
+
+    .card-form__group__img {
+        display: none;
+    }
+
+    .card-form__input__wrap {
+        margin: 0 0 30px 0;
+    }
+
+    .card-form__input {
+        width: 48%;
+        height: 40px;
+    }
+
+    .card__form__radio__wrap {
+        margin: 0 0 30px 0;
+    }
+}
+
+@media (max-width: 520px) {
+    .card__wrap {
+        gap: 15px;
+    }
+
+    .card-price {
+        width: 250px;
+        height: auto;
+        padding: 15px;
+        display: block;
+    }
+
+    .card-price__title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .card-price__sale__wrap {
+        margin: 0;
+    }
+
+    .card-price__sale {
+        width: 60px;
+        height: 25px;
+        padding: 4px 0;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .card-price__price {
+        font-size: 32px;
+        line-height: 39px;
+        margin: 0;
+    }
+
+    .card-price__old-price {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0 0 30px 0;
+    }
+
+    .right-table {
+        display: block;
+    }
+
+    .card-price__cashback {
+        font-size: 12px;
+        line-height: 14px;
+        margin: 0 0 5px 0;
+        padding: 0;
+    }
+
+    .card-price__cashback::before {
+        width: 40px;
+        height: 11px;
+        background-size: contain;
+        top: 0;
+        left: 65%;
+    }
+
+    .card-form {
+        padding: 15px;
+        width: 250px;
+        height: auto;
+    }
+
+    .card-form.success {
+        width: 250px;
+        height: 250px;
+        background-size: 172px;
+    }
+
+    .card-form__wrap {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0 0 30px 0;
+    }
+
+    .card-form__group {
+        padding: 10px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .card-form__input {
+        width: 100%;
+    }
+
+    .card__form__radio__wrap {
+        flex-wrap: wrap;
+        gap: 8px 16px;
+    }
+
+    .card-form__btn {
+        font-size: 14px;
+        line-height: 17px;
+        height: 40px;
+        padding: 12px 0;
+    }
+
+    .card__form__privacy {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

@@ -1,0 +1,242 @@
+.card-form {
+    width: 540px;
+    height: 660px;
+    padding: 50px 65px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.card__form__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    margin: 0 0 30px 0;
+}
+
+.card__form__desc {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #7C7C7C;
+    margin: 0 0 30px 0;
+}
+
+.card-form__step {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin: 0 0 11px 0;
+}
+
+.card-form__wrap {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 0 50px 0;
+}
+
+.card-form__group {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 19px;
+    width: 190px;
+    height: 113px;
+    box-sizing: border-box;
+}
+
+.card-form__group p {
+    margin: 0 0 7px 0;
+}
+
+.card-form__group p span {
+    font-weight: 600;
+}
+
+.card-form__group__img {
+    height: 15px;
+}
+
+.card-form label input {
+    display: none;
+}
+
+.card-form label input+.custom-input {
+    border: 1px solid #000;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.card-form label input:checked+.custom-input {
+    background-color: #000;
+}
+
+.card-form__group .custom-input {
+    margin: 0 0 6px 0;
+}
+
+.card-form__input__wrap {
+    display: flex;
+    margin: 0 0 30px 0;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card-form__input {
+    height: 50px;
+    border: 1px solid #7A7A7A;
+    border-radius: 54px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.card__form__radio__wrap {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    margin: 0 0 31px 0;
+}
+
+.card__form__radio__wrap label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card__form__radio__input__title {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.card-form__btn {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    margin: 0 0 15px 0;
+    padding: 15px;
+    background: #667EEA;
+    border-radius: 54px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFF;
+    text-align: center;
+}
+
+.card__form__privacy {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #7C7C7C;
+}
+
+.card__form__privacy a {
+    color: #7C7C7C;
+}
+
+.success {
+    background: url('./suc.svg') no-repeat center;
+    background-color: #FFF;
+}
+.success > *{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .card-form {
+        width: auto;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .card-form.success {
+        width: 520px;
+        height: 280px;
+    }
+
+    .card__form__title {
+        font-size: 24px;
+        line-height: 29px;
+        margin: 0 0 10px 0;
+    }
+
+    .card__form__desc {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .card-form__step {
+        font-size: 12px;
+        line-height: 14px;
+        margin: 0 0 15px 0;
+    }
+
+    .card-form__input__wrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .card-form__input {
+        width: 45%;
+        height: 40px;
+    }
+
+    .card-form__input.w100 {
+        width: 100%;
+    }
+
+    .card-form__btn {
+        height: 40px;
+        padding: 11px 0;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+@media (max-width: 520px) {
+    .card-form {
+        padding: 15px;
+    }
+
+    .card-form.success {
+        width: 250px;
+        height: 300px;
+        background-size: 180px;
+    }
+
+    .card__form__title {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .card-form__input {
+        width: 100%;
+    }
+
+    .card__form__radio__wrap {
+        flex-wrap: wrap;
+        gap: 8px 16px;
+    }
+}

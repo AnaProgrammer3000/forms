@@ -1,0 +1,445 @@
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 57px;
+    grid-column-gap: 220px;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    width: 1110px;
+    height: 517px;
+    padding: 70px 66px 50px 66px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    background: url("./tinkoff.png") no-repeat center;
+    width: 532px;
+    height: 468px;
+    display: block;
+    position: absolute;
+    bottom: 22%;
+    left: 29%;
+    opacity: .1;
+    filter: opacity(.3);
+    transform: rotate(27deg);
+}
+
+.card > * {
+    position: relative;
+    z-index: 2;
+}
+
+.card__info {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.card__form {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.card__privacy {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.card__info__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: 0 0 30px 0;
+    position: relative;
+}
+
+.card__info__title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url("./icon.svg") no-repeat center;
+    top: 0;
+    left: 63%;
+    width: 36px;
+    height: 26px;
+}
+
+.card__info__sale__wrap {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+
+.card__info__sale {
+    background: #F5DE4C;
+    border-radius: 42px;
+    width: 95px;
+    height: 40px;
+    padding: 7px 15px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.card__info__sale__text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #AAAAAA;
+}
+
+.card__info__price {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
+
+.card__info__old-price {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #7A7A7A;
+    text-decoration: line-through;
+    margin: 0 0 169px 0;
+}
+
+.card__info__text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #727272;
+}
+
+.card__form__input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #7A7A7A;
+    border-radius: 54px;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    margin: 0 0 10px 0;
+    background: #F4F4F4;
+}
+
+.card__form__input.last {
+    margin: 0 0 30px 0;
+}
+
+.card__form__input::placeholder {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #7A7A7A;
+}
+
+.card__form__radio-name {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
+
+.card__form__radio__wrap {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    margin: 0 0 30px 0;
+}
+
+.card__form__radio__wrap label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card__form__radio__wrap label input {
+    display: none;
+}
+
+.card__form__radio__wrap label input + .custom-input {
+    border: 1px solid #000;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.card__form__radio__wrap label input:checked + .custom-input {
+    background-color: #000;
+}
+
+.card__form__radio__input__title {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.card__form__btn {
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    background: #F5DE4C;
+    border-radius: 54px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+.card__privacy {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #7C7C7C;
+    max-width: 98%;
+}
+
+.card__privacy a {
+    color: #7C7C7C;
+}
+
+form {
+    margin: 0;
+}
+
+.card__submit-message {
+    display: none;
+    background: url("./submit.svg") no-repeat center;
+    background-size: contain;
+    grid-area: 1 / 2 / 3 / 2;
+    width: 242px;
+    margin: 0 auto;
+}
+
+.card__submit-message.active {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 520px;
+        height: 381px;
+        padding: 30px 20px;
+        grid-template-columns: 209px 215px;
+        grid-template-rows: 1fr 28px;
+        grid-column-gap: 56px;
+        grid-row-gap: 15px;
+    }
+
+    .card__info {
+        grid-area: 1/1/2/2;
+    }
+
+    .card__form {
+        grid-area: 1/2/2/3;
+    }
+
+    .card__privacy {
+        grid-area: 2/1/3/3;
+    }
+
+    .card__submit-message {
+        width: 118px;
+        grid-area: 1/2/3/3;
+    }
+
+    .card::before {
+        width: 341px;
+        height: 300px;
+        background-size: contain;
+        bottom: 35%;
+        left: 17%;
+    }
+
+    .card__info__title {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0 0 50px 0;
+    }
+
+    .card__info__title::before {
+        left: 90%;
+        width: 17px;
+        height: 13px;
+        background-size: contain;
+        top: 20%;
+    }
+
+    .card__info__sale__wrap {
+        margin: 0 0 5px 0;
+    }
+
+    .card__info__sale {
+        width: 70px;
+        height: 30px;
+        padding: 4px 0;
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .card__info__sale__text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .card__info__price {
+        font-size: 32px;
+        line-height: 39px;
+        margin: 0 0 5px 0;
+    }
+
+    .card__info__old-price {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0 0 77px 0;
+    }
+
+    .card__info__text {
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+        width: 150px;
+    }
+
+    .card__form__input {
+        height: 40px;
+        padding: 13px 15px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .card__form__input::placeholder {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .card__form__radio-name {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .card__form__radio__wrap {
+        gap: 5px;
+    }
+
+    .card__form__radio__input__title {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .card__form__btn {
+        font-size: 14px;
+        line-height: 17px;
+        height: 40px;
+        padding: 11px;
+    }
+
+    .card__privacy {
+        font-size: 12px;
+        line-height: 14px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 15px;
+        width: 250px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .card__info {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .card__form {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .card__privacy {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .card__submit-message {
+        height: 160px;
+        grid-area: 2 / 1 / 4 / 2;
+    }
+
+    .card::before {
+        left: -20%;
+        top: 25%;
+        bottom: 0;
+    }
+
+    .card__info__title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .card__info__title::before {
+        left: 64%;
+        top: 8%;
+    }
+
+    .card__info__sale {
+        width: 60px;
+        height: 25px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .card__info__price {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .card__info__old-price {
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0 0 30px 0;
+    }
+
+    .card__info__text {
+        color: #727272;
+    }
+
+    .card__form__radio__wrap {
+        flex-wrap: wrap;
+        gap: 8px 16px;
+    }
+
+    .card__privacy {
+        color: #7C7C7C;
+    }
+}

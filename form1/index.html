@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<div class="card__wrap">
+    <div class="card-price">
+        <div class="left-table">
+            <div class="card-price__title">Стоимость обучения</div>
+            <div class="card-price__sale__wrap">
+                <div class="card-price__sale">- 10%</div>
+                <div class="card-price__sale__text">еще 3 дня 76:42:45</div>
+            </div>
+            <div class="card-price__price">11 000 ₽</div>
+            <div class="card-price__old-price">13 000 ₽</div>
+        </div>
+       <div class="right-table">
+           <div class="card-price__cashback">
+               <span>Кешбек до 10%</span> картой
+           </div>
+           <div class="card-price__tax">
+               Налоговый вычет <span>13%</span>
+           </div>
+       </div>
+        <div class="card-price__discount">
+            Скидка 10% еще 3 дня 13:42:45
+        </div>
+    </div>
+    <form class="card-form">
+        <div class="card-form__step">
+            Шаг 1. Выберите вариант оплаты
+        </div>
+        <div class="card-form__wrap">
+            <label class="card-form__group">
+                <input type="radio" name="payment" value="part-pay" class="card-form__group-btn">
+                <div class="custom-input"></div>
+                <p>Оставить заявку на консультацию</p>
+            </label>
+            <label class="card-form__group">
+                <input type="radio" name="payment" value="full-pay" class="card-form__group-btn">
+                <div class="custom-input"></div>
+                <p>Оплатить всю сумму <span>со скидкой</span> 2 000 ₽</p>
+                <img src="/school/img/mir-ico.svg" class="card-form__group__img">
+            </label>
+        </div>
+        <div class="card-form__step">
+            Шаг 2. Заполните форму
+        </div>
+        <div class="card-form__input__wrap">
+            <input class="card-form__input w100" type="text" placeholder="Имя">
+            <input class="card-form__input phone" type="text" placeholder="Телефон">
+            <input class="card-form__input" type="text" placeholder="Email">
+        </div>
+        <div class="card-form__step">
+            Шаг 3. Выберете формат обучения
+        </div>
+        <div class="card__form__radio__wrap">
+            <label>
+                <input type="radio" class="card__form__radio__input" name="lerning-format">
+                <div class="custom-input"></div>
+                <div class="card__form__radio__input__title">Очно</div>
+            </label>
+            <label>
+                <input type="radio" class="card__form__radio__input" name="lerning-format" checked>
+                <div class="custom-input"></div>
+                <div class="card__form__radio__input__title">Онлайн</div>
+            </label>
+            <label>
+                <input type="radio" class="card__form__radio__input" name="lerning-format">
+                <div class="custom-input"></div>
+                <div class="card__form__radio__input__title">Дистанционно</div>
+            </label>
+        </div>
+        <input type="submit" class="card-form__btn" value="Приобрести">
+        <div class="card__form__privacy">
+            Нажимая на кнопку, вы даёте согласие на обработку своих персональных данных в соответствии с
+            <a href="#">политикой конфиденциальности</a>
+        </div>
+    </form>
+</div>
+<script src="./script.js"></script>
